@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <script>
+        document.write('Hello world!!')
+        console.log('console: hello world!!')
+    </script> -->
+    <script>
+        //============In chuoi
+        // const name = 'Khoa Hello'
+        //         //10 , true, 'string'
+        // document.write(name)
+
+        //=============Khai bao bien
+        // let firstName = 'Khoa'
+        // let secondName = 'Thanh'
+        // let number = 4
+        // number++;
+        // document.write(firstName + ' ' + secondName + number)
+
+        //===================Doi tuong trong js
+        // let user = {
+        //     name: 'Khoa',
+        //     age: 23,
+        //     address: 'Ben Tre',
+        //     //funtion
+        //     active: function() {
+        //         document.write('Hello may cung!!')
+        //     }
+        // };
+        // user.active();
+        // document.write('<br>' + 'Hello ' + user.name + '<br>' + user.age + ' ' + user.address)
+
+        //===================Chuoi
+        // let chuoi = 'Hooks are a new addition in React 16.8. They let you use state and other React features without writing a class.'
+        // document.write(chuoi.length + '<br>');
+        // document.write(chuoi.split(' ') + '<br>'); //cat tai ky tu a, hoac khoang cach
+        // document.write('Hook => ' + chuoi.substring(2, 5) + '<br>');
+        // document.write('check chuoi co "new" hay khong? ' + chuoi.includes('new')); //check xem co new kh
+
+        //===================Array(Mang) chua nhieu gia tri
+        // const traiCay = new Array()
+        // traiCay[0] = 'cóc'
+        // traiCay[1] = 'me'
+        // traiCay[2] = 'chanh'
+        // traiCay[3] = 'quýt'
+        // traiCay[4] = 'xoài chua'
+        // const persons = new Array('Khoa', 'Linh', 'Huy', 'Tan')
+        // document.write(persons + '<br>')
+        // document.write('Phan tu 2 : ' + persons[2])
+        // console.log(traiCay)
+
+        //===================Control Statement (Cau lenh dieu khien) if-else / Switch-Case
+        // let number = 1;
+        // if (number >= 10 || number != 10)
+        //     console.log(number)
+        // else
+        //     document.write(number)
+        //     //switch - case
+        // const input = 1;
+        // switch (input) {
+        //     case 2:
+        //         console.log('1. Hello')
+        //         break;
+        //     case 1:
+        //         console.log('2. Hello 2')
+        //         break;
+        //     case 4:
+        //         console.log('4. Hello 3')
+        //         break;
+        //     case 3:
+        //         console.log('3. Hello')
+        //         break;
+        // }
+
+        //===================Vong lap (Loop)
+        // const loop = new Array('KHOA', 'LINH', 'HUY')
+        // for (const o of loop) {
+        //     document.write(o + '<br>')
+        // }
+
+        //====================Function
+        // function printNumber(n) {
+        //     for (let index = 0; index < n; index++) {
+        //         document.write(index + 1 + ' ');
+        //     }
+        // }
+        // printNumber(10);
+
+        //====================Phan biet var, let, const
+        // (() => {
+        //     var foo = "Foo";
+        //     let bar = "Bar";
+        //     console.log(foo); // Foo
+        //     console.log(bar); // Bar
+        // })();
+
+        // console.log(foo); // ReferenceError: foo is not defined
+        // console.log(bar);
+        // //---------------
+        // for (var i = 0; i < 3; i++) {
+        //     var j = i * 2;
+        // }
+        // console.log(i); // 3
+        // console.log(j); // 4
+        // for (let k = 0; k < 3; k++) {
+        //     let l = k * 2;
+        // }
+        // console.log(typeof k); // undefined
+        // console.log(typeof l); // undefined
+        // Trying to do console.log(k) or console.log(l) here would throw a ReferenceError.
+        //const foo = "Foo";
+        // foo = "Foo1"; // TypeError: Assignment to constant variable.
+    </script>
+
+    <!--========== Cat chuoi theo id trong html
+    <h2>Demo chuoi 'Hooks are.' (2,5)</h2>
+    <div id="chuoi"></div>
+    <script>
+        let chuoi1 = 'Hooks are.';
+        let result = chuoi.substring(2, 5);
+        document.getElementById("chuoi").innerHTML = result;
+    </script> -->
+
+    <div>
+        <h2>Time: </h2><span id='root'></span>
+    </div>
+    <script>
+        function clock() {
+            const d = new Date();
+            document.getElementById('root').innerHTML = d.toLocaleTimeString();
+        }
+        setInterval(clock, 1000);
+    </script>
+</body>
+<div id="chuoi"></div>
+
+</html>
