@@ -44,4 +44,4 @@ else
     console.log('Thành công');
 
 var arrNum = '1 2 3 45 87 8 -9' 
-console.log('Số bé nhất: 1 2 3 45 87 8 -9', arrNum.split(''));
+console.log('Số bé nhất: 1 2 3 45 87 8 -9', arrNum.split('',a));

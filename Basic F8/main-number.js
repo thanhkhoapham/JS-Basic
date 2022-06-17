@@ -9,7 +9,7 @@
     - To fixed
  */
 
-/** 
+
 var age=23.52323423423
 var PI =3.1413
 
@@ -26,4 +26,3 @@ console.log(typeof age.toString()) // string
 //làm tròn toFix()
 console.log(age.toFixed())  // 24 
 console.log(age.toFixed(2)) // 23.52
-*/

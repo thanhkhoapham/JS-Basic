@@ -174,7 +174,7 @@ console.log(typeof d) // =>Object
    false
  */
 //----Toán tử và   &&   -----
-/**
+
 var a = 1; var b = 2
 var result = a < b && a < 0
 console.log(result) // => a < 0 là false nên log ra false
@@ -199,10 +199,8 @@ if (result)
     console.log('Điều kiện đúng')// =>Không có giá trị thuộc 6 value trên nên lấy ra giá trị c lưu vào result trả true
 else
     console.log('Điều kiện sai')
-*/
 
 //------Toán tử hoặc  ||  -------
-/** 
 var result = 'A' || 'B' || 'C'
 var result1 = null || 0 || 'C'
 
@@ -217,4 +215,3 @@ else
     console.log("Điều kiện sai")//Không có giá trị đúng trả về false
 console.log('Result: ',result) // => A
 console.log('Result 1: ',result1)// => C
-*/
