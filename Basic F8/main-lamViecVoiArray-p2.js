@@ -123,6 +123,7 @@ function coinTotal(accumlator, currentValue, currentIndex, originArray) {
 var totalReduce = course.reduce(coinTotal, 0) //Giá trị khởi tạo bằng 0
 console.log('Total: ', totalCoint)
 
+
 var totalES6 = course.reduce((a, b) => a + b.coin, 0);
 console.log("ES6: ", totalES6);
 
@@ -204,3 +205,20 @@ var title = 'A complete log of this run can be found in'
 console.log("Kiểm tra chuỗi - include: ", title.includes('this run'));
 var arr = ['Ai', 'Bik', 'Cut']
 console.log('Kiểm tra phần từ mảng: ', arr.includes('Bik',-2))// 3 - 2 = 1 index là 1
+=======
+var totalES6 = course.reduce((a, b) => a + b.coin,0);
+console.log("ES6: ", totalES6);
+
+var i=0;
+var totalCoin = course.reduce(function(total,arr){
+    i++;console.log(i,total,course);
+    return total+arr.coin;
+},0)//Init value
+console.log("Total reduce: ", totalCoin);
+
+var number = [100,200,100,300,504]
+var demoTotal= number.reduce(function(t,num){
+    return t+num;
+});//Lấy giá trị đầu là 100 nếu không có init
+console.log("Total nember: ", demoTotal);
+

@@ -22,9 +22,11 @@ setTimeout(function () {
  }, 5000)
 
 
+
 //------setInterval -  set dinh ky theo thoi gian, chay lien tuc
 setInterval(() => {
      console.log('Khoa dep trai gap ' + Math.random())
  }, 1000)
+
 
 
