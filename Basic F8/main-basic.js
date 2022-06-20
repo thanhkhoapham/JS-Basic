@@ -4,7 +4,6 @@ let fullName = 'Pham Thanh Khoa'
 let age = ": 26 tuoi"
 alert(fullName + ' ' + age)
 
-
 //------console
 console.log('Hello World!!')
 console.warn(fullName)
@@ -19,13 +18,15 @@ prompt("Xác nhận tuổi!!")
 
 //------setTimeout - set time thong bao sau 5s
 setTimeout(function () {
-    alert('Thong bao')
-}, 5000)
+     alert('Thong bao')
+ }, 5000)
+
 
 
 //------setInterval -  set dinh ky theo thoi gian, chay lien tuc
 setInterval(() => {
-    console.log('Khoa dep trai gap ' + Math.random())
-}, 1000)
+     console.log('Khoa dep trai gap ' + Math.random())
+ }, 1000)
+
 
 

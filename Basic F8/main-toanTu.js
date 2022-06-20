@@ -202,7 +202,6 @@ else
 
 
 //------Toán tử hoặc  ||  -------
-/** 
 var result = 'A' || 'B' || 'C'
 var result1 = null || 0 || 'C'
 
@@ -217,4 +216,3 @@ else
     console.log("Điều kiện sai")//Không có giá trị đúng trả về false
 console.log('Result: ',result) // => A
 console.log('Result 1: ',result1)// => C
-*/
