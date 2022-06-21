@@ -205,7 +205,7 @@ var title = 'A complete log of this run can be found in'
 console.log("Kiểm tra chuỗi - include: ", title.includes('this run'));
 var arr = ['Ai', 'Bik', 'Cut']
 console.log('Kiểm tra phần từ mảng: ', arr.includes('Bik',-2))// 3 - 2 = 1 index là 1
-=======
+
 var totalES6 = course.reduce((a, b) => a + b.coin,0);
 console.log("ES6: ", totalES6);
 
