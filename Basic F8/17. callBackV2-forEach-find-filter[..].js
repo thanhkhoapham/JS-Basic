@@ -100,17 +100,20 @@ var courseForSome = [
     {
         name: "Kotlin",
         coin: 100,
-        status: false
+        status: false,
+        progress: true
     },
     {
         name: "React JS",
         coin: 200,
-        status: false
+        status: false,
+        progress: true
     },
     {
         name: "JavaScript",
         coin: 300,
-        status: false
+        status: false,
+        progress: true
     }
 ]
 
@@ -118,4 +121,15 @@ var result = courseForSome.some((course, index, array) => {
     return course.status    //True nếu có ít nhất 1 status true
 });
 
-console.log("3. Some:  ",result);
+console.log("3. Some:  ", result);
+
+// ===================== every =====================
+/**
+    Ngược lại với every, trả về true/false nếu tất cả phẩn tử thõa mãn điều kiện
+ */
+
+var result = courseForSome.every((course, index, array) => {
+    return course.progress === true    //True nếu tất cả progress true
+});
+
+console.log("4. Every:  ", result);
