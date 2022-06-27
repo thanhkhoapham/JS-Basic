@@ -29,7 +29,7 @@ Array.prototype.khoaForEach = function(callback) {
 course.khoaForEach((course, index, array) => {
     console.log(course, index, array);
 });
-console.log(course);//trong prototype có chứa function khoaForEach
+console.log("0. ForEach===", course);//trong prototype có chứa function khoaForEach
 
 Array.prototype.khoaForEach = function(callback) {
     for(var i in this) {
@@ -50,7 +50,7 @@ Array.prototype.khoaForEach((callback) => {
     }
 });
 course.khoaForEach((course, index, array) => {
-    console.log(course, index, array);
+    console.log("1. ",course, index, array);
 })
 
 // ===================== Filter =====================
@@ -88,28 +88,34 @@ var filterCourse = courseForFilter.filter((course, index, array) => {
     return course.coin >= 300;
 });
 
-console.log("Lọc coin từ 300",filterCourse);
+console.log("2. Lọc coin từ 300",filterCourse);
 /**
                 Key: value types and refernce types
+*/
+// ===================== some =====================
+/**
+    Duyệt các phần tử, trả về true/false nếu có ít nhất 1 phần tử thỏa mãn điều kiện
  */
-//Advance
-
-Array.prototype.filterOfKhoaDepTrai = ((callback) => {
-    var output = [];
-
-    for(var i in this) {
-        if(this.hasOwnProperty(i)){
-            var result = callback(this[i], i, this)
-            if(result) {
-                output.push(this[i]);
-            }
-        }
+var courseForSome = [
+    {
+        name: "Kotlin",
+        coin: 100,
+        status: false
+    },
+    {
+        name: "React JS",
+        coin: 200,
+        status: false
+    },
+    {
+        name: "JavaScript",
+        coin: 300,
+        status: false
     }
+]
 
-    return output;
-})
-
-var filterCourseOfKhoa = courseForFilter.filterOfKhoaDepTrai((courseForFilter, index, array) => {
-    return courseForFilter.coin > 399;
+var result = courseForSome.some((course, index, array) => {
+    return course.status    //True nếu có ít nhất 1 status true
 });
-console.log("Lọc coni từ 300 với filter random", filterCourseOfKhoa);
+
+console.log("3. Some:  ",result);
